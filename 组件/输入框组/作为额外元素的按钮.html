@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport"
+					content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都必须跟随其后！ -->
+		<title>输入框组 把按钮作为额外元素</title>
+		<!-- Bootstrap -->
+		<link href="../../css/bootstrap.min.css" rel="stylesheet">
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="../../js/jquery-3.1.1.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="../../js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<h3>为输入框组添加按钮需要额外添加一层嵌套，不是 <code>.input-group-addon</code>，而是添加 <code>.input-group-btn</code> 来包裹按钮元素。由于不同浏览器的默认样式无法被统一的重新赋值，所以才需要这样做。</h3>
+		<pre>本页面用到的类<kbd>.input-group input-group-btn</kbd></pre>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="input-group">
+						<span class="input-group-btn">
+							<button class="btn btn-default">Go!</button>
+						</span>
+						<input type="text" class="form-control" placeholder="Search for...">
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="Search for...">
+						<span class="input-group-btn">
+							<button class="btn btn-default">Go!</button>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

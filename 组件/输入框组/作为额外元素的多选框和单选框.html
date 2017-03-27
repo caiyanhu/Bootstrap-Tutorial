@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport"
+					content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都必须跟随其后！ -->
+		<title>输入框组 把多选框和单选框作为额外元素</title>
+		<!-- Bootstrap -->
+		<link href="../../css/bootstrap.min.css" rel="stylesheet">
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="../../js/jquery-3.1.1.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="../../js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<h3>可以将多选框或单选框作为额外元素添加到输入框组中。</h3>
+		<pre>本页面用到的类<kbd>.container .row .col-lg-6 .input-group .input-group-addon .form-control</kbd></pre>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="input-group">
+						<!--将checkbox包在addon里-->
+						<span class="input-group-addon">
+							<input type="checkbox">
+						</span>
+						<input type="text" class="form-control">
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="input-group">
+						<!--将radio包在addon里-->
+						<span class="input-group-addon">
+							<input type="radio">
+						</span>
+						<input type="text" class="form-control">
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

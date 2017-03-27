@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport"
+					content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都必须跟随其后！ -->
+		<title>输入框组 多个按钮</title>
+		<!-- Bootstrap -->
+		<link href="../../css/bootstrap.min.css" rel="stylesheet">
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="../../js/jquery-3.1.1.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="../../js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<h3>input的两端各自最多只能有一个<code>.input-group-addon</code>，但是可以在一个<code>.input-group-btn</code>中放多个按钮</h3>
+		<pre>本页面用到的类<kbd>.input-group .input-group-btn .glyphicon .glyphicon-bold .glyphicon-italic .glyphicon-question-sign</kbd></pre>
+		<div class="input-group">
+			<div class="input-group-btn">
+				<button class="btn btn-default">
+					<span class="glyphicon glyphicon-bold"></span>
+				</button>
+				<button class="btn btn-default">
+					<span class="glyphicon glyphicon-italic"></span>
+				</button>
+			</div>
+			<input type="text" class="form-control">
+		</div>
+		<div class="input-group">
+			<input type="text" class="form-control">
+			<div class="input-group-btn">
+				<button class="btn btn-default">
+					<span class="glyphicon glyphicon-question-sign"></span>
+				</button>
+				<button class="btn btn-default">Action</button>
+			</div>
+		</div>
+	</body>
+</html>
