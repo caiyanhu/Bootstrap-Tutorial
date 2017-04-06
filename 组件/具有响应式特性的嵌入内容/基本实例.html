@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都必须跟随其后！ -->
+		<title>具有响应式特性的嵌入内容 实例</title>
+		<!-- Bootstrap -->
+		<link href="../../css/bootstrap.min.css" rel="stylesheet">
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="../../js/jquery-3.1.1.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="../../js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<h3>根据被嵌入内容的外部容器的宽度，自动创建一个固定的比例，从而让浏览器自动确定视频或 slideshow 的尺寸，能够在各种设备上缩放。</h3>
+		<p>这些规则被直接应用在 <code>&lt;iframe&gt;</code>、<code>&lt;embed&gt;</code>、<code>&lt;video&gt;</code> 和 <code>&lt;object&gt;</code>
+			元素上。如果你希望让最终样式与其他属性相匹配，还可以明确地使用一个派生出来的
+			<code>.embed-responsive-item</code> 类。</p>
+		<p>超级提示： 不需要为 <code>&lt;iframe&gt;</code> 元素设置 <kbd>frameborder="0"</kbd> 属性，因为我们已经替你这样做了！</p>
+		<pre>本页面用到的类<kbd>.embed-responsive .embed-responsive-16by9 .embed-responsive-4by3 .embed-responsive-item</kbd></pre>
+		<div class="embed-responsive embed-responsive-16by9" style="border: solid blueviolet;">
+			<iframe class="embed-responsive-item" src="http://caiyanhu.lofter.com/"></iframe>
+		</div>
+		<div class="embed-responsive embed-responsive-4by3" style="border: solid blueviolet;">
+			<iframe class="embed-responsive-item" src="http://caiyanhu.lofter.com/"></iframe>
+		</div>
+	</body>
+</html>
