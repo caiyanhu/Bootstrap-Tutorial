@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都必须跟随其后！ -->
+		<title>进度条 带有提示标签的进度条</title>
+		<!-- Bootstrap -->
+		<link href="../../css/bootstrap.min.css" rel="stylesheet">
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="../../js/jquery-3.1.1.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="../../js/bootstrap.min.js"></script>
+	</head>
+
+	<body>
+		<h3>提示当前的进度</h3>
+		<pre>本页面用到的类<kbd>progress</kbd> <kbd>progress-bar</kbd> <kbd>min-width</kbd></pre>
+		<div class="progress">
+			<div class="progress-bar" role="progressbar" style="width:60%;">
+				60%
+			</div>
+		</div>
+		<p>在展示很低的百分比时，如果需要让文本提示能够清晰可见，可以为进度条设置 min-width 属性。</p>
+		<div class="progress">
+			<div class="progress-bar" style="min-width: 2em;">
+				0%
+			</div>
+		</div>
+		<div class="progress">
+			<div class="progress-bar" style="min-width: 2em;width: 2%;">
+				2%
+			</div>
+		</div>
+	</body>
+
+</html>
