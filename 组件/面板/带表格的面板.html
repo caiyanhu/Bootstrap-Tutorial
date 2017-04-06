@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都必须跟随其后！ -->
+		<title>面板 带表格的面板</title>
+		<!-- Bootstrap -->
+		<link href="../../css/bootstrap.min.css" rel="stylesheet">
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="../../js/jquery-3.1.1.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="../../js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<h3>为面板中不需要边框的表格添加 <code>.table</code> 类，是整个面板看上去更像是一个整体设计。</h3>
+		<pre>本页面用到的类<kbd>.panel .panel-default .panel-heading .panel-body .table</kbd></pre>
+		<p>如果是带有 <code>.panel-body</code> 的面板，我们为表格的上方添加一个边框，看上去有分隔效果。</p>
+		<div class="panel panel-default" style="width: 40%;">
+			<div class="panel-heading">
+				Panel heading
+			</div>
+			<div class="panel-body">
+				<p>Some default panel content here. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam.
+					Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+			</div>
+			<!--Table-->
+			<table class="table">
+				<thead>
+					<tr>
+						<th>#</th>
+						<th>First Name</th>
+						<th>Last Name</th>
+						<th>Username</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th scope="row">1</th>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+					</tr>
+					<tr>
+						<th scope="row">2</th>
+						<td>Jacob</td>
+						<td>Thornton</td>
+						<td>@fat</td>
+					</tr>
+					<tr>
+						<th scope="row">3</th>
+						<td>Larry</td>
+						<td>the Bird</td>
+						<td>@twitter</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<p>如果没有 <code>.panel-body</code> ，面板标题会和表格连接起来，没有空隙。</p>
+		<div class="panel panel-default" style="width: 40%;">
+			<div class="panel-heading">
+				Panel heading
+			</div>
+			<!--Table-->
+			<table class="table">
+				<thead>
+					<tr>
+						<th>#</th>
+						<th>First Name</th>
+						<th>Last Name</th>
+						<th>Username</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th scope="row">1</th>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+					</tr>
+					<tr>
+						<th scope="row">2</th>
+						<td>Jacob</td>
+						<td>Thornton</td>
+						<td>@fat</td>
+					</tr>
+					<tr>
+						<th scope="row">3</th>
+						<td>Larry</td>
+						<td>the Bird</td>
+						<td>@twitter</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</body>
+</html>

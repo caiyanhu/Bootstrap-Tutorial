@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都必须跟随其后！ -->
+		<title>面板 带标题的面板</title>
+		<!-- Bootstrap -->
+		<link href="../../css/bootstrap.min.css" rel="stylesheet">
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="../../js/jquery-3.1.1.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="../../js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<h3>通过 <code>.panel-heading</code> 可以很简单地为面板加入一个标题容器。你也可以通过添加设置了 <code>.panel-title</code> 类的
+			<code>&lt;h1&gt;-&lt;h6&gt;</code> 标签，添加一个预定义样式的标题。不过，<code>&lt;h1&gt;-&lt;h6&gt;</code> 标签的字体大小将被 <code>.panel-heading</code> 的样式所覆盖。</h3>
+		<p>为了给链接设置合适的颜色，务必将链接放到带有 <code>.panel-title</code> 类的标题标签内。</p>
+		<pre>本页面用到的类<kbd>.panel .panel-default .panel-heading .panel-title .panel-body</kbd></pre>
+		<div class="panel panel-default" style="width: 25%;">
+			<div class="panel-heading">
+				Panel heading without title
+			</div>
+			<div class="panel-body">
+				Panel content
+			</div>
+		</div>
+		<div class="panel panel-default" style="width: 25%;">
+			<div class="panel-heading">
+				<div class="panel-title">
+					Panel heading with title
+				</div>
+			</div>
+			<div class="panel-body">
+				Panel content
+			</div>
+		</div>
+	</body>
+</html>
