@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都必须跟随其后！ -->
+		<title>导航条 按钮</title>
+		<!-- Bootstrap -->
+		<link href="../../css/bootstrap.min.css" rel="stylesheet">
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="../../js/jquery-3.1.1.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="../../js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<h3>对于不包含在 <code>&lt;form&gt;</code> 中的 <code>&lt;button&gt;</code> 元素，加上 <code>.navbar-btn</code> 后，可以让它在导航条里垂直居中。</h3>
+		<pre>本页面用到的类<kbd>navbar navbar-default navbar-header navbar-brand navbar-collapse collapse navbar-left navbar-btn</kbd></pre>
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#example_collapse" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="#" class="navbar-brand">Brand</a>
+				</div>
+				<div class="collapse navbar-collapse" id="example_collapse">
+					<div class="navbar-left">
+						<button class="btn btn-default navbar-btn">Sign in</button>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</body>
+</html>
