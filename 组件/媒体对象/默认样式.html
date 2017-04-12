@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都必须跟随其后！ -->
+		<title>媒体对象 默认样式</title>
+		<!-- Bootstrap -->
+		<link href="../../css/bootstrap.min.css" rel="stylesheet">
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="../../js/jquery-3.1.1.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="../../js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<h3>这是一个抽象的样式，用以构建不同类型的组件，这些组件都具有在文本内容的左或右侧对齐的图片（就像博客评论或 Twitter 消息等）。默认样式的媒体对象组件允许在一个内容块的左边或右边展示一个多媒体内容（图像、视频、音频）。</h3>
+		<pre>本页面用到的类<kbd>media media-left media-body media-object media-heading media-right</kbd></pre>
+		<p><strong>在 html 结构中， <code>.media-right</code> 应当放在 <code>.media-body</code> 的后面。</strong></p>
+		<div class="media">
+			<div class="media-left">
+				<a href="#">
+					<img class="media-object" src="../../images/64by64.svg" alt="64by64">
+				</a>
+			</div>
+			<div class="media-body">
+				<h4 class="media-heading">
+					Media Heading
+				</h4>
+				<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at,
+					tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+			</div>
+		</div>
+
+		<!--嵌套的div.media-->
+		<div class="media">
+			<div class="media-left">
+				<a href="#">
+					<img src="../../images/64by64.svg" alt="64by64" class="media-object">
+				</a>
+			</div>
+			<div class="media-body">
+				<h4 class="media-heading">Media heading</h4>
+				<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at,
+					tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+				<div class="media">
+					<div class="media-left">
+						<a href="#">
+							<img src="../../images/64by64.svg" alt="64by64" class="media-object">
+						</a>
+					</div>
+					<div class="media-body">
+						<h4 class="media-heading">Nested media heading</h4>
+						<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at,
+							tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="media">
+			<div class="media-body">
+				<h4 class="media-heading">Media heading</h4>
+				<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at,
+					tempus viverra turpis.</p>
+			</div>
+			<div class="media-right">
+				<a href="#">
+					<img src="../../images/64by64.svg" alt="64by64" class="media-object">
+				</a>
+			</div>
+		</div>
+
+		<div class="media">
+			<div class="media-left">
+				<a href="#">
+					<img src="../../images/64by64.svg" alt="64by64" class="media-object">
+				</a>
+			</div>
+			<div class="media-body">
+				<h4 class="media-heading">Media heading</h4>
+				<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at,
+					tempus viverra turpis.</p>
+			</div>
+			<div class="media-right">
+				<a href="#">
+					<img src="../../images/64by64.svg" alt="64by64" class="media-object">
+				</a>
+			</div>
+		</div>
+	</body>
+</html>

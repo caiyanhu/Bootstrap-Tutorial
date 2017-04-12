@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都必须跟随其后！ -->
+		<title>媒体对象 媒体对象列表</title>
+		<!-- Bootstrap -->
+		<link href="../../css/bootstrap.min.css" rel="stylesheet">
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="../../js/jquery-3.1.1.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="../../js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<h3>用一点点额外的标记，就能在列表内使用媒体对象组件（对评论或文章列表很有用）。</h3>
+		<pre>本页面用到的类<kbd>media-list media media-left media-body media-object media-heading</kbd></pre>
+		<ul class="media-list">
+			<li class="media">
+				<div class="media-left">
+					<a href="#">
+						<img src="../../images/64by64.svg" alt="64by64" class="media-object">
+					</a>
+				</div>
+				<div class="media-body">
+					<h4 class="media-heading">Media heading</h4>
+					<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at,
+						tempus viverra turpis.</p>
+					<!--嵌套media-->
+					<ul class="media-list">
+						<li class="media">
+							<div class="media-left">
+								<a href="#">
+									<img src="../../images/64by64.svg" alt="64by64" class="media-object">
+								</a>
+							</div>
+							<div class="media-body">
+								<h4 class="media-heading">Nested media heading</h4>
+								<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate
+									at, tempus viverra turpis.</p>
+								<ul class="media-list">
+									<li class="media">
+										<div class="media-left">
+											<a href="#">
+												<img src="../../images/64by64.svg" alt="64by64" class="media-object">
+											</a>
+										</div>
+										<div class="media-body">
+											<h4 class="media-object">Nested media heading</h4>
+											<p>
+												Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in
+												vulputate
+												at, tempus viverra turpis.
+											</p>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="media">
+							<div class="media-left">
+								<a href="#">
+									<img src="../../images/64by64.svg" alt="64by64" class="media-object">
+								</a>
+							</div>
+							<div class="media-body">
+								<h4 class="media-heading">Nested media heading</h4>
+								<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate
+									at, tempus viverra turpis.</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+	</body>
+</html>
