@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都必须跟随其后！ -->
+		<title>模态框 使用网格系统</title>
+		<!-- Bootstrap -->
+		<link href="../../css/bootstrap.min.css" rel="stylesheet">
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="../../js/jquery-3.1.1.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="../../js/bootstrap.min.js"></script>
+	</head>
+	<style>
+		div.row div {
+			border: thin solid;
+		}
+	</style>
+	<body>
+		<h3>在modal中同样可以使用Bootstrap的网格系统，只需在<code>.modal-body</code>中嵌入<code>.row</code>即可。</h3>
+		<pre>本页面用到的类<kbd>fade modal modal-dialog modal-content modal-header modal-body modal-footer modal-title</kbd></pre>
+		<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".modal">Pop dialog</button>
+		<div class="fade modal" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<h4 class="modal-title">Modal title</h4>
+					</div>
+					<div class="modal-body">
+						<div class="row">
+							<div class="col-md-4">.col-md-4</div>
+							<div class="col-md-4 col-md-offset-4">.col-md-4 .col-md-offset-4</div>
+						</div>
+						<div class="row">
+							<div class="col-md-3 col-md-offset-3">.col-md-3 .col-md-offset-3</div>
+							<div class="col-md-2 col-md-offset-4">.col-md-2 .col-md-offset-4</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6 col-md-offset-3">.col-md-6 .col-md-offset-3</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-9">
+								Level1: .col-sm-9
+								<div class="col-xs-8 col-sm-6">
+									Level2: .col-xs-8 .col-sm-6
+								</div>
+								<div class="col-xs-4 col-sm-6">
+									Level2: .col-xs-4 .col-sm-6
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary">Save changes</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
