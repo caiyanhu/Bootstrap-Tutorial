@@ -1,0 +1,252 @@
+@import "common";
+
+.navbar {
+  //border:0,margin:0是清除bootstrap navbar默认的border:1px... margin-bottom:20px的样式
+  border: 0;
+  margin: 0;
+  padding: 30px;
+  background-color: $dominantHue;
+  a {
+	color: #FFF;
+  }
+  .navbar-brand {
+	font-size: 1.25rem;
+  }
+  #navHeader {
+	& a:hover {
+	  background-color: transparent;
+	}
+  }
+  -webkit-transition: all .5s ease 0s;
+  -moz-transition: all .5s ease 0s;
+  -ms-transition: all .5s ease 0s;
+  -o-transition: all .5s ease 0s;
+  transition: all .5s ease 0s;
+}
+
+.navbar-fixed-top {
+  background-color: #313131;
+  -webkit-transition: background-color 1s ease 0s;
+  -moz-transition: background-color 1s ease 0s;
+  -ms-transition: background-color 1s ease 0s;
+  -o-transition: background-color 1s ease 0s;
+  transition: background-color 1s ease 0s;
+}
+
+.mailblast {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  min-height: 750px;
+  position: relative;
+  z-index: 10;
+  background-color: $dominantHue;
+  h1 {
+	@include h1_black;
+	color: #FFF;
+	//mixin h1_black中，h1有margin-top：15px。现在把它清零，防止.nav和.mailblast之间有空隙
+	margin-top: 0;
+  }
+  h5 {
+	@include h5_black;
+	color: #FFF;
+  }
+  & a {
+	color: #FFF;
+	font-size: 1.1rem;
+	padding: 0.85rem 3.75rem;
+	margin: 4rem auto 0;
+	border-radius: 0.25rem;
+	border: none;
+	background-color: #0A6875;
+	text-decoration: none;
+  }
+  & a:hover {
+	color: #FFF;
+	background-color: #004F5C;
+	text-decoration: underline;
+	-webkit-transition: all .5s ease 0s;
+	-moz-transition: all .5s ease 0s;
+	-ms-transition: all .5s ease 0s;
+	-o-transition: all .5s ease 0s;
+	transition: all .5s ease 0s;
+  }
+  .building {
+	background: url("../images/building.png") bottom center no-repeat;
+	background-size: contain;
+	position: absolute;
+	//margin:auto，left:0,right:0可以使绝对定位的div水平方向居中
+	margin: auto;
+	right: 0;
+	left: 0;
+	//将本div沉到最下面
+	bottom: 0;
+	img {
+	  width: 100%;
+	  height: auto;
+	}
+  }
+}
+
+.slogan {
+  text-align: center;
+  h1 {
+	@include h1_black;
+  }
+  h5 {
+	@include h5_black;
+	& a {
+	  color: $dominantHue;
+	  text-decoration: none;
+	}
+	& a:hover {
+	  color: #22707C;
+	  text-decoration: underline;
+	  -webkit-transition: all .5s ease 0s;
+	  -moz-transition: all .5s ease 0s;
+	  -ms-transition: all .5s ease 0s;
+	  -o-transition: all .5s ease 0s;
+	  transition: all .5s ease 0s;
+	}
+  }
+}
+
+.features {
+  h1 {
+	@include h1_black;
+  }
+  text-align: center;
+  .row {
+	//对.row采用flex布局，align-items:center保证.row下的元素垂直居中对齐。justify-content:center可以保证.row下的元素水平居中对齐
+	display: flex;
+	align-items: center;
+	& .col-sm-5 {
+	  h4 {
+		@include h4_black;
+	  }
+	  h5 {
+		@include h5_black;
+	  }
+	}
+	& .col-sm-7 {
+	  img {
+		width: 100%;
+		height: auto;
+	  }
+	}
+  }
+}
+
+.signup {
+  .col-sm-12 {
+	text-align: center;
+	a {
+	  font-size: 1.25rem;
+	  color: #FFF;
+	  background-color: $dominantHue;
+	  border-color: #0493A7;
+	  padding: 0.75rem 1.5rem;
+	  border-radius: 0.3rem;
+	}
+	a:hover {
+	  background-color: #278390;
+	  -webkit-transition: all 0.5s ease 0s;
+	  -moz-transition: all 0.5s ease 0s;
+	  -ms-transition: all 0.5s ease 0s;
+	  -o-transition: all 0.5s ease 0s;
+	  transition: all 0.5s ease 0s;
+	}
+	p {
+	  margin: 0 auto 1rem;
+	  color: #636C72;
+	}
+  }
+}
+
+.footer {
+  height: 100%;
+  padding: 30px 0 20px;
+  background-color: #191E2B;
+  color: #999;
+  h5 {
+	@include h5_black;
+	color: #FFF;
+  }
+  p {
+	margin: 0 auto 1rem;
+	& a {
+	  color: $dominantHue;
+	  text-decoration: none;
+	}
+	& a:hover {
+	  color: #FFF;
+	  text-decoration: underline;
+	  -webkit-transition: all .5s ease 0s;
+	  -moz-transition: all .5s ease 0s;
+	  -ms-transition: all .5s ease 0s;
+	  -o-transition: all .5s ease 0s;
+	  transition: all .5s ease 0s;
+	}
+  }
+  //两个社交按钮
+  .col-sm-3:last-child {
+	a {
+	  width: 45px;
+	  height: 45px;
+	  padding: 0;
+	  color: #FFF;
+	  border-color: rgba(0, 0, 0, .2);
+	  i {
+		margin: 5px auto;
+	  }
+	}
+	a:hover {
+	  -webkit-transition: background-color .5s ease 0s;
+	  -moz-transition: background-color .5s ease 0s;
+	  -ms-transition: background-color .5s ease 0s;
+	  -o-transition: background-color .5s ease 0s;
+	  transition: background-color .5s ease 0s;
+	}
+	.facebook {
+	  background-color: $facebookBlue;
+	}
+	.twitter {
+	  background-color: $twitterBlue;
+	}
+	.facebook:hover {
+	  background-color: #30487B;
+	}
+	.twitter:hover {
+	  background-color: #309AEA;
+	}
+  }
+}
+
+.envelope {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  width: 60px;
+  height: 60px;
+  background-color: $dominantHue;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  svg {
+	position: relative;
+	left: 13px;
+	top: 15px;
+  }
+  &:hover {
+	-webkit-transform: scale(1.05);
+	-moz-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	-o-transform: scale(1.05);
+	transform: scale(1.05);
+	-webkit-transition: all .5s ease 0s;
+	-moz-transition: all .5s ease 0s;
+	-ms-transition: all .5s ease 0s;
+	-o-transition: all .5s ease 0s;
+	transition: all .5s ease 0s;
+  }
+}

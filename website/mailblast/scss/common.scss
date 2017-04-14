@@ -1,0 +1,44 @@
+//主色调
+$dominantHue: #32A7B8;
+$facebookBlue: #3B5998;
+$twitterBlue: #55ACEE;
+@mixin h1_black {
+  font-family: Montserrat, sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  color: #333;
+  margin: 15px 0;
+}
+
+@mixin h4_black {
+  font-family: Montserrat, sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  color: #333;
+  margin: 10px 0;
+}
+
+@mixin h5_black {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: #333;
+  margin: 5px 0 10px;
+}
+
+html {
+  font-size: 20px;
+}
+
+body {
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.5;
+}
+
+//分隔线
+.divider-line {
+  width: 200px;
+  border-bottom: 2px solid $dominantHue;
+  margin: 2.5rem auto;
+}

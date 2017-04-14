@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<title>Mailblast - Email Marketing on a budget using Amazon SES</title>
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="../../css/bootstrap.min.css">
+		<link rel="stylesheet" href="scss/font-awesome.min.css">
+		<link rel="stylesheet" href="scss/index.css">
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="../../js/jquery-3.1.1.js"></script>
+		<script src="../../js/bootstrap.min.js"></script>
+		<script src="js/common.js"></script>
+	</head>
+	<body>
+		<!--导航条-->
+		<nav class="navbar">
+			<div class="container-fluid">
+				<!--toggle-->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navHeader" aria-expanded="false">
+						&#9776;
+					</button>
+					<a href="https://mailblast.io/" class="navbar-brand">Mailblast</a>
+				</div>
+				<!--nav content-->
+				<div class="navbar-collapse collapse" id="navHeader">
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a href="/pricing">Pricing</a>
+						</li>
+						<li>
+							<a href="http://docs.mailblast.io/">Docs</a>
+						</li>
+						<li>
+							<a href="/users/sign_in">Login</a>
+						</li>
+						<li>
+							<a href="/users/sign_up">Signup</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!--Mailblast-->
+		<section class="mailblast">
+			<h1>Mailblast</h1>
+			<h5>Email Marketing on a budget using Amazon SES</h5>
+			<a class="btn btn-lg" href="/users/sign_up">Start for Free</a>
+			<div class="container building">
+				<img src="images/rocket.png" alt="rocket">
+			</div>
+		</section>
+		<!--Slogan-->
+		<section class="slogan">
+			<div class="container">
+				<h1>Simple Email Marketing</h1>
+				<h5>Mailblast makes sending emails simple and cheap using Amazon's <a href="https://aws.amazon.com/ses/" title="Amazon SES" target="_blank">Simple Email
+					Service</a>
+					Save money and time without sacrificing deliverability.
+				</h5>
+				<div class="divider-line"></div>
+			</div>
+		</section>
+		<!--Features-->
+		<section class="features">
+			<h1>Features</h1>
+			<div class="list">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-5">
+							<h4>List Management</h4>
+							<h5>Upload and manage your subscriber lists online. Easy to use filters and import functionality make management a breeze.</h5>
+						</div>
+						<div class="col-sm-7">
+							<img src="images/List.png" alt="List Management">
+						</div>
+					</div>
+				</div>
+				<div class="divider-line"></div>
+			</div>
+			<div class="campain">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-5 col-sm-push-7">
+							<h4>Send Campaigns</h4>
+							<h5>Create, test and schedule campaigns using an easy to use wizard.</h5>
+						</div>
+						<div class="col-sm-7 col-sm-pull-5">
+							<img src="images/Campaign.png" alt="Send Campains">
+						</div>
+					</div>
+				</div>
+				<div class="divider-line"></div>
+			</div>
+			<div class="report">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-5">
+							<h4>Detailed Reports</h4>
+							<h5>See detailed reports on every campaign. Bounces and complaints are automatically filtered for future campaigns.</h5>
+						</div>
+						<div class="col-sm-7">
+							<img src="images/Report.png" alt="Detailed Report">
+						</div>
+					</div>
+				</div>
+				<div class="divider-line"></div>
+			</div>
+			<div class="automation">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-5 col-sm-push-7">
+							<h4>Marketing Automation</h4>
+							<h5>Send scheduled automated emails to users who sign up to your list.</h5>
+						</div>
+						<div class="col-sm-7 col-sm-pull-5">
+							<img src="images/Automation.png" alt="Marketing Automation">
+						</div>
+					</div>
+				</div>
+				<div class="divider-line"></div>
+			</div>
+			<div class="form">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-5">
+							<h4>Signup Forms</h4>
+							<h5>Embed Signup forms on your website to drive subscribers to your list.</h5>
+						</div>
+						<div class="col-sm-7">
+							<img src="images/Form.png" alt="Signup Form">
+						</div>
+					</div>
+				</div>
+				<div class="divider-line"></div>
+			</div>
+		</section>
+		<!--Signup-->
+		<section class="signup">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<a href="/users/sign_up" class="btn btn-primary btn-lg">Start with Free Plan</a>
+						<p>1,000 Subscribers. Unlimited Emails.</p>
+						<p>Does not include Amazon SES fees, (2,000 free emails/day) 0.10$/1000 emails after.</p>
+					</div>
+				</div>
+			</div>
+			<div class="divider-line"></div>
+		</section>
+		<!--Footer-->
+		<section class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-3">
+						<h5>Quick Links</h5>
+						<p><a href="http://api-docs.mailblast.io">Api Docs</a></p>
+						<p><a href="/pricing">Pricing</a></p>
+					</div>
+					<div class="col-sm-3">
+						<h5>Help</h5>
+						<p><a href="mailto:contact@mailblast.io">Contact@mailblast.io</a></p>
+						<p><a href="http://docs.mailblast.io">Documentation</a></p>
+					</div>
+					<div class="col-sm-3">
+						<h5>Legal</h5>
+						<p><a href="/terms_of_service">Terms of Service</a></p>
+						<p><a href="/privacy_policy">Privact Policy</a></p>
+					</div>
+					<div class="col-sm-3">
+						<h5>Social</h5>
+						<a href="https://www.facebook.com/MailblastIO" class="btn btn-lg facebook">
+							<i class="fa fa-facebook fa-2x"></i>
+						</a>
+						<a href="https://twitter.com/MailblastIO" class="btn btn-lg twitter">
+							<i class="fa fa-twitter fa-2x"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--信封-->
+		<div class="envelope">
+			<svg width="33" height="27" viewBox="0 0 33 27" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+				<defs>
+					<path d="M26.616 36.896l4.289 4.514 3.305-5.385 8.827-1.014L41.544 19.5l-25.507 2.928 1.493 15.511 9.086-1.043z" id="b"/>
+					<filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="a">
+						<feMorphology radius="1" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"/>
+						<feOffset dy="1" in="shadowSpreadOuter1" result="shadowOffsetOuter1"/>
+						<feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+						<feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+						<feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.153702446 0" in="shadowBlurOuter1"/>
+					</filter>
+				</defs>
+				<g transform="translate(-13 -18)" fill="none" fill-rule="evenodd">
+					<use fill="#000" filter="url(#a)" xlink:href="#b"/>
+					<use stroke="#FFF" stroke-width="2" fill="#FFF" xlink:href="#b"/>
+				</g>
+			</svg>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,239 @@
+html {
+  font-size: 20px; }
+
+body {
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.5; }
+
+.divider-line {
+  width: 200px;
+  border-bottom: 2px solid #32A7B8;
+  margin: 2.5rem auto; }
+
+.navbar {
+  border: 0;
+  margin: 0;
+  padding: 30px;
+  background-color: #32A7B8;
+  -webkit-transition: all .5s ease 0s;
+  -moz-transition: all .5s ease 0s;
+  -ms-transition: all .5s ease 0s;
+  -o-transition: all .5s ease 0s;
+  transition: all .5s ease 0s; }
+  .navbar a {
+    color: #FFF; }
+  .navbar .navbar-brand {
+    font-size: 1.25rem; }
+  .navbar #navHeader a:hover {
+    background-color: transparent; }
+
+.navbar-fixed-top {
+  background-color: #313131;
+  -webkit-transition: background-color 1s ease 0s;
+  -moz-transition: background-color 1s ease 0s;
+  -ms-transition: background-color 1s ease 0s;
+  -o-transition: background-color 1s ease 0s;
+  transition: background-color 1s ease 0s; }
+
+.mailblast {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  min-height: 750px;
+  position: relative;
+  z-index: 10;
+  background-color: #32A7B8; }
+  .mailblast h1 {
+    font-family: Montserrat, sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    color: #333;
+    margin: 15px 0;
+    color: #FFF;
+    margin-top: 0; }
+  .mailblast h5 {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #333;
+    margin: 5px 0 10px;
+    color: #FFF; }
+  .mailblast a {
+    color: #FFF;
+    font-size: 1.1rem;
+    padding: 0.85rem 3.75rem;
+    margin: 4rem auto 0;
+    border-radius: 0.25rem;
+    border: none;
+    background-color: #0A6875;
+    text-decoration: none; }
+  .mailblast a:hover {
+    color: #FFF;
+    background-color: #004F5C;
+    text-decoration: underline;
+    -webkit-transition: all .5s ease 0s;
+    -moz-transition: all .5s ease 0s;
+    -ms-transition: all .5s ease 0s;
+    -o-transition: all .5s ease 0s;
+    transition: all .5s ease 0s; }
+  .mailblast .building {
+    background: url("../images/building.png") bottom center no-repeat;
+    background-size: contain;
+    position: absolute;
+    margin: auto;
+    right: 0;
+    left: 0;
+    bottom: 0; }
+    .mailblast .building img {
+      width: 100%;
+      height: auto; }
+
+.slogan {
+  text-align: center; }
+  .slogan h1 {
+    font-family: Montserrat, sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    color: #333;
+    margin: 15px 0; }
+  .slogan h5 {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #333;
+    margin: 5px 0 10px; }
+    .slogan h5 a {
+      color: #32A7B8;
+      text-decoration: none; }
+    .slogan h5 a:hover {
+      color: #22707C;
+      text-decoration: underline;
+      -webkit-transition: all .5s ease 0s;
+      -moz-transition: all .5s ease 0s;
+      -ms-transition: all .5s ease 0s;
+      -o-transition: all .5s ease 0s;
+      transition: all .5s ease 0s; }
+
+.features {
+  text-align: center; }
+  .features h1 {
+    font-family: Montserrat, sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    color: #333;
+    margin: 15px 0; }
+  .features .row {
+    display: flex;
+    align-items: center; }
+    .features .row .col-sm-5 h4 {
+      font-family: Montserrat, sans-serif;
+      font-size: 28px;
+      font-weight: 400;
+      color: #333;
+      margin: 10px 0; }
+    .features .row .col-sm-5 h5 {
+      font-family: "Source Sans Pro", sans-serif;
+      font-size: 24px;
+      font-weight: 400;
+      color: #333;
+      margin: 5px 0 10px; }
+    .features .row .col-sm-7 img {
+      width: 100%;
+      height: auto; }
+
+.signup .col-sm-12 {
+  text-align: center; }
+  .signup .col-sm-12 a {
+    font-size: 1.25rem;
+    color: #FFF;
+    background-color: #32A7B8;
+    border-color: #0493A7;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.3rem; }
+  .signup .col-sm-12 a:hover {
+    background-color: #278390;
+    -webkit-transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    -ms-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s; }
+  .signup .col-sm-12 p {
+    margin: 0 auto 1rem;
+    color: #636C72; }
+
+.footer {
+  height: 100%;
+  padding: 30px 0 20px;
+  background-color: #191E2B;
+  color: #999; }
+  .footer h5 {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #333;
+    margin: 5px 0 10px;
+    color: #FFF; }
+  .footer p {
+    margin: 0 auto 1rem; }
+    .footer p a {
+      color: #32A7B8;
+      text-decoration: none; }
+    .footer p a:hover {
+      color: #FFF;
+      text-decoration: underline;
+      -webkit-transition: all .5s ease 0s;
+      -moz-transition: all .5s ease 0s;
+      -ms-transition: all .5s ease 0s;
+      -o-transition: all .5s ease 0s;
+      transition: all .5s ease 0s; }
+  .footer .col-sm-3:last-child a {
+    width: 45px;
+    height: 45px;
+    padding: 0;
+    color: #FFF;
+    border-color: rgba(0, 0, 0, 0.2); }
+    .footer .col-sm-3:last-child a i {
+      margin: 5px auto; }
+  .footer .col-sm-3:last-child a:hover {
+    -webkit-transition: background-color .5s ease 0s;
+    -moz-transition: background-color .5s ease 0s;
+    -ms-transition: background-color .5s ease 0s;
+    -o-transition: background-color .5s ease 0s;
+    transition: background-color .5s ease 0s; }
+  .footer .col-sm-3:last-child .facebook {
+    background-color: #3B5998; }
+  .footer .col-sm-3:last-child .twitter {
+    background-color: #55ACEE; }
+  .footer .col-sm-3:last-child .facebook:hover {
+    background-color: #30487B; }
+  .footer .col-sm-3:last-child .twitter:hover {
+    background-color: #309AEA; }
+
+.envelope {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  width: 60px;
+  height: 60px;
+  background-color: #32A7B8;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px; }
+  .envelope svg {
+    position: relative;
+    left: 13px;
+    top: 15px; }
+  .envelope:hover {
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);
+    -webkit-transition: all .5s ease 0s;
+    -moz-transition: all .5s ease 0s;
+    -ms-transition: all .5s ease 0s;
+    -o-transition: all .5s ease 0s;
+    transition: all .5s ease 0s; }
+
+/*# sourceMappingURL=index.css.map */
