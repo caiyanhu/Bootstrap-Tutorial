@@ -1,0 +1,97 @@
+@import "common";
+
+.content {
+  @media (min-width: 576px) {
+	.dialog {
+	  max-width: 500px;
+	  margin: 8rem auto 0;
+	  .card {
+		display: flex;
+		flex-direction: column;
+		background-color: #FFF;
+		border-radius: 0.25rem;
+		border: 1px solid $dominantHue;
+		.card-header {
+		  background-color: $dominantHue;
+		  border: 1px solid $dominantHue;
+		  padding: 0.25rem 1.25rem;
+		  h4 {
+			@include h4_black;
+			color: #FFF;
+		  }
+		}
+		.card-block {
+		  flex: 1 1 auto;
+		  label {
+			margin-top: .5rem;
+			font-weight: normal;
+		  }
+		  .form-control {
+			display: block;
+			width: 100%;
+			padding: .5rem .75rem;
+			font-size: 1rem;
+			line-height: 1.25;
+			color: #464A4C;
+			background-color: #FFF;
+			background-clip: border-box;
+			border: 1px solid rgba(0, 0, 0, .15);
+			border-radius: .25rem;
+			-webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+			-moz-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+			-ms-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+			-o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+			transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+		  }
+		  .form-check {
+			position: relative;
+			margin-top: .5rem;
+			.form-check-label {
+			  cursor: pointer;
+			  .form-check-input {
+				margin-top: .25rem;
+			  }
+			}
+		  }
+		  input[type='submit'] {
+			font-weight: normal;
+			font-size: 1rem;
+			line-height: 1.25;
+			text-align: center;
+			white-space: nowrap;
+			vertical-align: middle;
+			user-select: none;
+			border: 1px solid transparent;
+			padding: .5rem 1rem;
+			-webkit-transition: all .2s ease-in-out;
+			-moz-transition: all .2s ease-in-out;
+			-ms-transition: all .2s ease-in-out;
+			-o-transition: all .2s ease-in-out;
+			transition: all .2s ease-in-out;
+			color: #FFF;
+			background-color: $dominantHue;
+			border-color: #0493A7;
+		  }
+		  & a {
+			font-size: 1rem;
+			font-weight: normal;
+			line-height: 1.25;
+			text-align: center;
+			vertical-align: middle;
+			border: 1px solid transparent;
+			color: #F0AD4E;
+			float: right;
+		  }
+		}
+	  }
+	  p {
+		text-align: center;
+		margin-bottom: 1rem;
+		a {
+		  color: $dominantHue;
+		  background-color: transparent;
+		}
+	  }
+	}
+  }
+}

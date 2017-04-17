@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<title>Mailblast - Email Marketing on a budget using Amazon SES</title>
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="../../css/bootstrap.min.css">
+		<link rel="stylesheet" href="scss/font-awesome.min.css">
+		<link rel="stylesheet" href="scss/nav.css">
+		<link rel="stylesheet" href="scss/footer.css">
+		<link rel="stylesheet" href="scss/envelope.css">
+		<link rel="stylesheet" href="scss/pricing.css">
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="../../js/jquery-3.1.1.js"></script>
+		<script src="../../js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<nav class="navbar">
+			<div class="container-fluid">
+				<!--toggle-->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navHeader" aria-expanded="false">
+						&#9776;
+					</button>
+					<a href="index.html" class="navbar-brand">Mailblast</a>
+				</div>
+				<!--nav content-->
+				<div class="navbar-collapse collapse" id="navHeader">
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a href="pricing.html">Pricing</a>
+						</li>
+						<li>
+							<a href="http://docs.mailblast.io/">Docs</a>
+						</li>
+						<li>
+							<a href="sign_in.html">Login</a>
+						</li>
+						<li>
+							<a href="sign_up.html">Signup</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!--Content-->
+		<section class="content">
+			<div class="container">
+				<h1>Plans & Pricing</h1>
+				<h5>Plans are limited by the number of subscribers you can store in your lists.
+					Our free plan provides
+					<span class="text_primary">1,000</span>
+					subscribers and unlimited emails. Start now and upgrade at any time.
+				</h5>
+				<div class="row">
+					<div class="col-lg-3">
+						<div class="price-item">
+							<div class="name">
+								<h5>Sputnik</h5>
+							</div>
+							<div class="price">
+								<span class="prefix">$</span>
+								<span class="value">15</span>
+								<span class="text">/month</span>
+							</div>
+							<hr>
+							<div>All features included</div>
+							<hr>
+							<div class="text">
+								<span class="subscriber-count">15,000</span>
+								Subscribers
+							</div>
+							<hr>
+							<div>Unlimited Emails</div>
+							<hr>
+							<div class="signup">
+								<a href="sign_up.html" class="btn btn-primary btn-lg">Start Free Plan</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<div class="price-item">
+							<div class="name">
+								<h5>Apollo</h5>
+							</div>
+							<div class="price">
+								<span class="prefix">$</span>
+								<span class="value">25</span>
+								<span class="text">/month</span>
+							</div>
+							<hr>
+							<div>All features included</div>
+							<hr>
+							<div class="text">
+								<span class="subscriber-count">75,000</span>
+								Subscribers
+							</div>
+							<hr>
+							<div>Unlimited Emails</div>
+							<hr>
+							<div class="signup">
+								<a href="sign_up.html" class="btn btn-primary btn-lg">Start Free Plan</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<div class="price-item">
+							<div class="name">
+								<h5>Falcon</h5>
+							</div>
+							<div class="price">
+								<span class="prefix">$</span>
+								<span class="value">45</span>
+								<span class="text">/month</span>
+							</div>
+							<hr>
+							<div>All features included</div>
+							<hr>
+							<div class="text">
+								<span class="subscriber-count">150,000</span>
+								Subscribers
+							</div>
+							<hr>
+							<div>Unlimited Emails</div>
+							<hr>
+							<div class="signup">
+								<a href="sign_up.html" class="btn btn-primary btn-lg">Start Free Plan</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<div class="price-item">
+							<div class="name">
+								<h5>Enterprise</h5>
+							</div>
+							<div class="price">
+								<span class="prefix">$</span>
+								<span class="value">65</span>
+								<span class="text">/month</span>
+							</div>
+							<hr>
+							<div>All features included</div>
+							<hr>
+							<div class="text">
+								<span class="subscriber-count">250,000</span>
+								Subscribers
+							</div>
+							<hr>
+							<div>Unlimited Emails</div>
+							<hr>
+							<div class="signup">
+								<a href="sign_up.html" class="btn btn-primary btn-lg">Start Free Plan</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<p>Does not include Amazon SES fees, (2,000 free emails/day) 0.10$/1000 emails after.</p>
+				<p>Contact us if you require a plan that is larger that 250K subscribers.</p>
+				<div class="poweredBy">
+					<img src="images/stripe.svg" alt="Powered By Stripe">
+				</div>
+				<div class="bank">
+					<img src="images/visa.png" alt="Visa">
+					<img src="images/mastercard.png" alt="MasterCard">
+					<img src="images/americanExpress.png" alt="American Express">
+				</div>
+				<div class="divider-line"></div>
+			</div>
+		</section>
+		<!--Footer-->
+		<section class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-3">
+						<h5>Quick Links</h5>
+						<p><a href="http://api-docs.mailblast.io">Api Docs</a></p>
+						<p><a href="pricing.html">Pricing</a></p>
+					</div>
+					<div class="col-sm-3">
+						<h5>Help</h5>
+						<p><a href="mailto:contact@mailblast.io">Contact@mailblast.io</a></p>
+						<p><a href="http://docs.mailblast.io">Documentation</a></p>
+					</div>
+					<div class="col-sm-3">
+						<h5>Legal</h5>
+						<p><a href="terms_of_service.html">Terms of Service</a></p>
+						<p><a href="privacy_policy.html">Privact Policy</a></p>
+					</div>
+					<div class="col-sm-3">
+						<h5>Social</h5>
+						<a href="https://www.facebook.com/MailblastIO" class="btn btn-lg facebook">
+							<i class="fa fa-facebook fa-2x"></i>
+						</a>
+						<a href="https://twitter.com/MailblastIO" class="btn btn-lg twitter">
+							<i class="fa fa-twitter fa-2x"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--信封-->
+		<div class="envelope">
+			<svg width="33" height="27" viewBox="0 0 33 27" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+				<defs>
+					<path d="M26.616 36.896l4.289 4.514 3.305-5.385 8.827-1.014L41.544 19.5l-25.507 2.928 1.493 15.511 9.086-1.043z" id="b"/>
+					<filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="a">
+						<feMorphology radius="1" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"/>
+						<feOffset dy="1" in="shadowSpreadOuter1" result="shadowOffsetOuter1"/>
+						<feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+						<feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+						<feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.153702446 0" in="shadowBlurOuter1"/>
+					</filter>
+				</defs>
+				<g transform="translate(-13 -18)" fill="none" fill-rule="evenodd">
+					<use fill="#000" filter="url(#a)" xlink:href="#b"/>
+					<use stroke="#FFF" stroke-width="2" fill="#FFF" xlink:href="#b"/>
+				</g>
+			</svg>
+		</div>
+	</body>
+</html>

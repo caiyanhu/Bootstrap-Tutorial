@@ -1,0 +1,111 @@
+@import "common";
+
+.navbar {
+  background-color: #313131;
+}
+
+.content {
+  //padding-top:90px可以将被navbar遮挡住的部分显示出来。90px是navbar的高度
+  padding-top: 90px;
+  //padding-bottom:191px可以将被.footer遮挡住的部分显示出来。191px是.footer的高度
+  padding-bottom: 191px;
+  text-align: center;
+  h1 {
+	@include h1_black;
+  }
+  h5 {
+	@include h5_black;
+	.text_primary {
+	  color: $dominantHue;
+	}
+  }
+  .row {
+	.price-item {
+	  color: #333;
+	  border-radius: 5px;
+	  -webkit-box-shadow: 0px 2px 5px 0px #AAA;
+	  -moz-box-shadow: 0px 2px 5px 0px #AAA;
+	  box-shadow: 0px 2px 5px 0px #AAA;
+	  .name {
+		background-color: $dominantHue;
+		//圆角边框的值与父容器圆角边框的值相同
+		border-radius: 5px 5px 0 0;
+		padding: 1rem 0;
+		margin: 1rem 0;
+		text-transform: uppercase;
+		h5 {
+		  @include h5_black;
+		  color: #FFF;
+		}
+	  }
+	  .price {
+		color: #464A4C;
+		.prefix {
+		  font-size: 2rem;
+		}
+		.value {
+		  font-size: 3rem;
+		  font-weight: bold;
+		}
+		.text {
+		  margin: 1rem 0;
+		}
+	  }
+	  .text {
+		margin: 1rem 0;
+		.subscriber-count {
+		  font-size: 1.1rem;
+		  font-weight: bold;
+		}
+	  }
+	  .signup {
+		padding-bottom: 1rem;
+		.btn {
+		  display: inline-block;
+		  font-weight: normal;
+		  line-height: 1.25;
+		  text-align: center;
+		  white-space: nowrap;
+		  vertical-align: middle;
+		  user-select: none;
+		  border: 1px solid transparent;
+		}
+		.btn-lg {
+		  padding: 0.75rem 1.5rem;
+		  font-size: 1.25rem;
+		  border: 0.3rem;
+		}
+		& a {
+		  color: #FFF;
+		  background-color: $dominantHue;
+		  border-color: #0493A7;
+		  text-decoration: none;
+		}
+		& a:hover {
+		  outline: 0;
+		  background-color: #278390;
+		  -webkit-transition: all .5s ease 0s;
+		  -moz-transition: all .5s ease 0s;
+		  -ms-transition: all .5s ease 0s;
+		  -o-transition: all .5s ease 0s;
+		  transition: all .5s ease 0s;
+		}
+	  }
+	}
+  }
+  p {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 1rem;
+	font-weight: normal;
+	line-height: 1.5;
+	color: #636C72;
+	text-align: center;
+	margin: 1rem auto;
+  }
+  .poweredBy {
+	margin: 3rem auto 1rem;
+	img {
+	  height: 2rem;
+	}
+  }
+}

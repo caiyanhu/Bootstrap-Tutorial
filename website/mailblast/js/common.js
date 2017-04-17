@@ -11,7 +11,8 @@ $(function() {
       $('.mailblast nav').css({'position': 'relative', 'background-color': '#32A7B8'});
     }
   });
+  //
   $(document).on('click', '.envelope', function() {
-    location.href = 'https://mailblast.io/';
+    location.href = 'index.html';
   });
 });
