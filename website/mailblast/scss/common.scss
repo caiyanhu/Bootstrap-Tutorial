@@ -2,6 +2,7 @@
 $dominantHue: #32A7B8;
 $facebookBlue: #3B5998;
 $twitterBlue: #55ACEE;
+@import "webFont.css";
 @mixin h1_black {
   font-family: Montserrat, sans-serif;
   font-size: 60px;
