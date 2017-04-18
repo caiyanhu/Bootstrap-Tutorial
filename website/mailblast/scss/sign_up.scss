@@ -1,1 +1,79 @@
 @import "common";
+
+.content {
+  //显示被navbar遮挡的部分
+  padding-top: 90px;
+  .dialog {
+	@media (min-width: 576px) {
+	  max-width: 500px;
+	  margin: 8rem auto 0;
+	}
+	border: 1px solid $dominantHue;
+	border-radius: 0.25rem;
+	h4 {
+	  @include h4_black;
+	  color: #FFF;
+	  background-color: $dominantHue;
+	  padding: 0.25rem 1.25rem;
+	  margin: 0;
+	}
+	form {
+	  label {
+		font-family: 'Source Sans Pro', sans-serif;
+		font-size: .8rem;
+		font-weight: 400;
+		line-height: 1.5;
+		margin-bottom: 8px;
+	  }
+	  .form-group, button {
+		margin: 0 1.25rem 0.8rem;
+	  }
+	  button {
+		border: 1px solid #0493A7;
+		background-color: $dominantHue;
+		color: #FFF;
+		font-size: 1rem;
+		padding: .4rem .8rem;
+	  }
+	  button:hover {
+		background-color: #278390;
+		-webkit-transition: all .5s ease 0s;
+		-moz-transition: all .5s ease 0s;
+		-ms-transition: all .5s ease 0s;
+		-o-transition: all .5s ease 0s;
+		transition: all .5s ease 0s;
+	  }
+	  a {
+		font-family: 'Source Sans Pro', sans-serif;
+		font-size: .8rem;
+		font-weight: 400;
+		line-height: 1.25;
+		float: right;
+		color: #F0AD4E;
+	  }
+	  a:hover {
+		-webkit-transition: all .5s ease 0s;
+		-moz-transition: all .5s ease 0s;
+		-ms-transition: all .5s ease 0s;
+		-o-transition: all .5s ease 0s;
+		transition: all .5s ease 0s;
+	  }
+	}
+  }
+  p {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: .8rem;
+	font-weight: 400;
+	line-height: 1.5;
+	margin-bottom: .8rem;
+	text-align: center;
+	a {
+	  color: $dominantHue;
+	  background-color: transparent;
+	}
+  }
+}
+
+#footer {
+  position: relative;
+}

@@ -5,6 +5,8 @@ html {
   height: 100%; }
 
 body {
+  width: 100%;
+  height: 100%;
   font-size: 1rem;
   font-weight: normal;
   line-height: 1.5; }
@@ -13,6 +15,9 @@ body {
   width: 200px;
   border-bottom: 2px solid #32A7B8;
   margin: 2.5rem auto; }
+
+body {
+  overflow: hidden; }
 
 @media (min-width: 576px) {
   .content .dialog {
@@ -82,6 +87,7 @@ body {
           background-color: #32A7B8;
           border-color: #0493A7; }
         .content .dialog .card .card-block a {
+          font-family: 'Source Sans Pro', sans-serif;
           font-size: 1rem;
           font-weight: normal;
           line-height: 1.25;

@@ -1,6 +1,9 @@
 @import "common";
 
 .navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
   background-color: #313131;
 }
 
@@ -108,4 +111,8 @@
 	  height: 2rem;
 	}
   }
+}
+
+#footer {
+  position: relative;
 }

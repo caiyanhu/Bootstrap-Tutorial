@@ -13,6 +13,13 @@ $(function() {
   });
   //
   $(document).on('click', '.envelope', function() {
-    location.href = 'index.html';
+    //如果是users文件夹下的页面，那么跳转到主页时路径得多上跳一层
+    if (window.location.pathname.indexOf('users')) {
+      location.href = '../index.html';
+    }
+    //同级页面跳转即可直接写要跳转的页面名
+    else {
+      location.href = 'index.html';
+    }
   });
 });

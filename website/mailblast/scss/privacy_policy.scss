@@ -1,0 +1,51 @@
+@import "common";
+
+.navbar {
+  position: absolute;
+}
+
+.content {
+  padding-top: 90px;
+  .header {
+	background-color: #ECEEEF;
+	h2 {
+	  font-family: Montserrat, sans-serif;
+	  font-size: 2.4rem;
+	  font-weight: 400;
+	  color: $dominantHue;
+	  margin: 10px;
+	}
+  }
+  .policy {
+	p {
+	  color: #292B2C;
+	  font-family: 'Source Sans Pro', sans-serif;
+	  font-size: .8rem;
+	  font-weight: 400;
+	  line-height: 1.5;
+	  margin-bottom: .8rem;
+	  a {
+		color: $dominantHue;
+	  }
+	}
+	h3 {
+	  font-family: Montserrat, sans-serif;
+	  font-size: 1.8rem;
+	  font-weight: 400;
+	  color: #333;
+	  margin: 10px 0 20px;
+	}
+	ul {
+	  font-family: 'Source Sans Pro', sans-serif;
+	  font-size: .8rem;
+	  font-weight: 400;
+	  line-height: 1.5;
+	  color: #292B2C;
+	  margin-bottom: 1rem;
+	}
+  }
+}
+
+#footer {
+  position: relative;
+}

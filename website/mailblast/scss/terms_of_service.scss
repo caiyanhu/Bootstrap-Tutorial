@@ -1,0 +1,45 @@
+@import "common";
+
+.navbar {
+  position: absolute;
+}
+
+#header {
+  padding: 90px 0 10px;
+  margin-bottom: 1rem;
+  background-color: #ECEEEF;
+  h2 {
+	font-family: Montserrat, sans-serif;
+	font-size: 48px;
+	font-weight: 400;
+	color: $dominantHue;
+	margin: 10px;
+  }
+}
+
+#content {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.5;
+  color: #292B2C;
+  p {
+	margin-bottom: 1rem;
+  }
+  ol {
+	margin-bottom: 1rem;
+	list-style: decimal;
+	b {
+	  font-weight: bolder;
+	}
+  }
+}
+
+//空的占位div，作用是往下推191px，从而使被footer挡住的部分显示出来
+.blankPlace {
+  height: 191px;
+}
+
+#footer {
+  position: relative;
+}

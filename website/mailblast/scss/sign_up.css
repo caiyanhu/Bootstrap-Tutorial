@@ -5,6 +5,8 @@ html {
   height: 100%; }
 
 body {
+  width: 100%;
+  height: 100%;
   font-size: 1rem;
   font-weight: normal;
   line-height: 1.5; }
@@ -13,5 +15,72 @@ body {
   width: 200px;
   border-bottom: 2px solid #32A7B8;
   margin: 2.5rem auto; }
+
+.content {
+  padding-top: 90px; }
+  .content .dialog {
+    border: 1px solid #32A7B8;
+    border-radius: 0.25rem; }
+    @media (min-width: 576px) {
+      .content .dialog {
+        max-width: 500px;
+        margin: 8rem auto 0; } }
+    .content .dialog h4 {
+      font-family: Montserrat, sans-serif;
+      font-size: 28px;
+      font-weight: 400;
+      color: #333;
+      margin: 10px 0;
+      color: #FFF;
+      background-color: #32A7B8;
+      padding: 0.25rem 1.25rem;
+      margin: 0; }
+    .content .dialog form label {
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: .8rem;
+      font-weight: 400;
+      line-height: 1.5;
+      margin-bottom: 8px; }
+    .content .dialog form .form-group, .content .dialog form button {
+      margin: 0 1.25rem 0.8rem; }
+    .content .dialog form button {
+      border: 1px solid #0493A7;
+      background-color: #32A7B8;
+      color: #FFF;
+      font-size: 1rem;
+      padding: .4rem .8rem; }
+    .content .dialog form button:hover {
+      background-color: #278390;
+      -webkit-transition: all .5s ease 0s;
+      -moz-transition: all .5s ease 0s;
+      -ms-transition: all .5s ease 0s;
+      -o-transition: all .5s ease 0s;
+      transition: all .5s ease 0s; }
+    .content .dialog form a {
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: .8rem;
+      font-weight: 400;
+      line-height: 1.25;
+      float: right;
+      color: #F0AD4E; }
+    .content .dialog form a:hover {
+      -webkit-transition: all .5s ease 0s;
+      -moz-transition: all .5s ease 0s;
+      -ms-transition: all .5s ease 0s;
+      -o-transition: all .5s ease 0s;
+      transition: all .5s ease 0s; }
+  .content p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: .8rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: .8rem;
+    text-align: center; }
+    .content p a {
+      color: #32A7B8;
+      background-color: transparent; }
+
+#footer {
+  position: relative; }
 
 /*# sourceMappingURL=sign_up.css.map */

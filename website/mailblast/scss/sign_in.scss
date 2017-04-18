@@ -1,5 +1,10 @@
 @import "common";
 
+body {
+  //去掉本页面的滚动条
+  overflow: hidden;
+}
+
 .content {
   @media (min-width: 576px) {
 	.dialog {
@@ -73,6 +78,7 @@
 			border-color: #0493A7;
 		  }
 		  & a {
+			font-family: 'Source Sans Pro', sans-serif;
 			font-size: 1rem;
 			font-weight: normal;
 			line-height: 1.25;

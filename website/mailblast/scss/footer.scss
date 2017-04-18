@@ -1,7 +1,8 @@
 @import "common";
 //背景色为黑色的固定在底部的页脚
 .footer {
-  position: fixed;
+  position: absolute;
+  left: 0;
   bottom: 0;
   box-sizing: border-box;
   width: 100%;

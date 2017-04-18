@@ -6,12 +6,12 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1">
 		<title>Mailblast - Email Marketing on a budget using Amazon SES</title>
 		<!-- Bootstrap -->
-		<link rel="stylesheet" href="../../css/bootstrap.min.css">
-		<link rel="stylesheet" href="scss/font-awesome.min.css">
-		<link rel="stylesheet" href="scss/nav.css">
-		<link rel="stylesheet" href="scss/footer.css">
-		<link rel="stylesheet" href="scss/envelope.css">
-		<link rel="stylesheet" href="scss/sign_in.css">
+		<link rel="stylesheet" href="../../../css/bootstrap.min.css">
+		<link rel="stylesheet" href="../scss/font-awesome.min.css">
+		<link rel="stylesheet" href="../scss/nav.css">
+		<link rel="stylesheet" href="../scss/footer.css">
+		<link rel="stylesheet" href="../scss/envelope.css">
+		<link rel="stylesheet" href="../scss/sign_up.css">
 
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -20,8 +20,9 @@
 		<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
 		<![endif]-->
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-		<script src="../../js/jquery-3.1.1.js"></script>
-		<script src="../../js/bootstrap.min.js"></script>
+		<script src="../../../js/jquery-3.1.1.js"></script>
+		<script src="../../../js/bootstrap.min.js"></script>
+		<script src="../js/common.js"></script>
 	</head>
 	<body>
 		<nav class="navbar">
@@ -31,13 +32,13 @@
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navHeader" aria-expanded="false">
 						&#9776;
 					</button>
-					<a href="index.html" class="navbar-brand">Mailblast</a>
+					<a href="../index.html" class="navbar-brand">Mailblast</a>
 				</div>
 				<!--nav content-->
 				<div class="navbar-collapse collapse" id="navHeader">
 					<ul class="nav navbar-nav navbar-right">
 						<li>
-							<a href="pricing.html">Pricing</a>
+							<a href="../pricing.html">Pricing</a>
 						</li>
 						<li>
 							<a href="http://docs.mailblast.io/">Docs</a>
@@ -55,33 +56,25 @@
 		<!--Content-->
 		<section class="content">
 			<div class="dialog">
-				<div class="card">
-					<div class="card-header">
-						<h4>Sign in</h4>
+				<h4>Sign up</h4>
+				<form>
+					<div class="form-group">
+						<label for="signup_name">Name *</label>
+						<input type="text" class="form-control" id="signup_name">
 					</div>
-					<div class="card-block">
-						<form action="" class="new_user" id="new_user" method="post">
-							<div class="form-group">
-								<label for="user_email" class="form-control-label required">Email</label>
-								<input type="email" class="form-control" id="user_email" autofocus name="user[email]">
-							</div>
-							<div class="form-group">
-								<label for="user_password" class="form-control-label required">Password</label>
-								<input type="password" class="form-control" id="user_password" name="user[password]">
-							</div>
-							<div class="form-check">
-								<label for="user_remember_me" class="form-check-label">
-									<input type="checkbox" id="user_remember_me" class="form-check-input" value="1" name="user[remember_me]">
-									Remember me
-								</label>
-							</div>
-							<input type="submit" name="commit" value="Sign in" class="btn btn-primary" data-disable-with="Sign in">
-							<a href="/users/password/new" class="btn btn-link text-warning float-right">Forgot your password?</a>
-						</form>
+					<div class="form-group">
+						<label for="signup_email">Email *</label>
+						<input type="email" class="form-control" id="signup_email">
 					</div>
-				</div>
-				<p><a href="/users/confirmation/new">Didn't receive confirmation instructions?</a></p>
+					<div class="form-group">
+						<label for="signup_password">Password *</label>
+						<input type="password" class="form-control" id="signup_password">
+					</div>
+					<button class="btn btn-primary">Sign up</button>
+					<a href="sign_in.html">Already a member?</a>
+				</form>
 			</div>
+			<p>By Clicking "Sign up", you agree to our <a href="../terms_of_service.html">Terms of Service</a></p>
 		</section>
 		<!--Footer-->
 		<section class="footer">
@@ -90,7 +83,7 @@
 					<div class="col-sm-3">
 						<h5>Quick Links</h5>
 						<p><a href="http://api-docs.mailblast.io">Api Docs</a></p>
-						<p><a href="pricing.html">Pricing</a></p>
+						<p><a href="../pricing.html">Pricing</a></p>
 					</div>
 					<div class="col-sm-3">
 						<h5>Help</h5>
@@ -99,8 +92,8 @@
 					</div>
 					<div class="col-sm-3">
 						<h5>Legal</h5>
-						<p><a href="terms_of_service.html">Terms of Service</a></p>
-						<p><a href="privacy_policy.html">Privact Policy</a></p>
+						<p><a href="../terms_of_service.html">Terms of Service</a></p>
+						<p><a href="../privacy_policy.html">Privact Policy</a></p>
 					</div>
 					<div class="col-sm-3">
 						<h5>Social</h5>

@@ -149,6 +149,7 @@
 }
 
 .signup {
+  padding-bottom: 191px;
   .col-sm-12 {
 	text-align: center;
 	a {
@@ -176,64 +177,8 @@
   }
 }
 
-.footer {
-  height: 100%;
-  padding: 30px 0 20px;
-  background-color: #191E2B;
-  color: #999;
-  h5 {
-	@include h5_black;
-	color: #FFF;
-  }
-  p {
-	margin: 0 auto 1rem;
-	& a {
-	  font-family: 'Source Sans Pro', sans-serif;
-	  color: $dominantHue;
-	  text-decoration: none;
-	}
-	& a:hover {
-	  color: #FFF;
-	  text-decoration: underline;
-	  -webkit-transition: all .5s ease 0s;
-	  -moz-transition: all .5s ease 0s;
-	  -ms-transition: all .5s ease 0s;
-	  -o-transition: all .5s ease 0s;
-	  transition: all .5s ease 0s;
-	}
-  }
-  //两个社交按钮
-  .col-sm-3:last-child {
-	a {
-	  width: 45px;
-	  height: 45px;
-	  padding: 0;
-	  color: #FFF;
-	  border-color: rgba(0, 0, 0, .2);
-	  i {
-		margin: 5px auto;
-	  }
-	}
-	a:hover {
-	  -webkit-transition: background-color .5s ease 0s;
-	  -moz-transition: background-color .5s ease 0s;
-	  -ms-transition: background-color .5s ease 0s;
-	  -o-transition: background-color .5s ease 0s;
-	  transition: background-color .5s ease 0s;
-	}
-	.facebook {
-	  background-color: $facebookBlue;
-	}
-	.twitter {
-	  background-color: $twitterBlue;
-	}
-	.facebook:hover {
-	  background-color: #30487B;
-	}
-	.twitter:hover {
-	  background-color: #309AEA;
-	}
-  }
+#footer {
+  position: relative;
 }
 
 .envelope {
