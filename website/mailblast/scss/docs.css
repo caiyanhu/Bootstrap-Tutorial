@@ -16,10 +16,19 @@ body {
   border-bottom: 2px solid #32A7B8;
   margin: 2.5rem auto; }
 
+body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: 1fr auto; }
+
 .navbar {
   background-color: #32A7B8;
   margin-bottom: 0; }
+  .navbar .navbar-header .navbar-toggle {
+    border-color: #32A7B8;
+    background-color: transparent; }
   .navbar .navbar-collapse a {
+    margin-top: 10px;
     color: #FFF; }
 
 .docSearch {
@@ -35,9 +44,14 @@ body {
     line-height: 1.125;
     margin-top: .65rem; }
   .docSearch form {
-    width: 620px;
     padding: 1.2rem 0;
     margin: 0 auto; }
+    @media (min-width: 620px) {
+      .docSearch form {
+        width: 620px; } }
+    @media (max-width: 620px) {
+      .docSearch form {
+        width: 100%; } }
     .docSearch form input, .docSearch form button {
       height: 50px;
       font-size: .9rem; }
@@ -53,17 +67,39 @@ body {
 
 #contentArea h2 {
   text-align: center; }
-#contentArea .popArticles {
-  text-align: left;
-  list-style: none;
-  width: 50%;
-  float: left; }
-  #contentArea .popArticles li {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: .9rem;
+#contentArea .wrapper {
+  display: grid;
+  grid-template-columns: 1fr 40px 1fr;
+  grid-template-rows: repeat(5, auto 0.8rem); }
+  #contentArea .wrapper .box {
+    font-size: .8rem;
+    line-height: 1.125;
     margin-bottom: .8rem; }
-  #contentArea .popArticles a span {
-    color: #32A7B8; }
+    #contentArea .wrapper .box i {
+      color: #A7A7A7;
+      margin-right: 6px; }
+    #contentArea .wrapper .box span {
+      color: #32A7B8; }
+  #contentArea .wrapper .box1 {
+    grid-area: 1/1/2/2; }
+  #contentArea .wrapper .box2 {
+    grid-area: 3/1/4/2; }
+  #contentArea .wrapper .box3 {
+    grid-area: 5/1/6/2; }
+  #contentArea .wrapper .box4 {
+    grid-area: 7/1/8/2; }
+  #contentArea .wrapper .box5 {
+    grid-area: 9/1/10/2; }
+  #contentArea .wrapper .box6 {
+    grid-area: 1/3/2/4; }
+  #contentArea .wrapper .box7 {
+    grid-area: 3/3/4/4; }
+  #contentArea .wrapper .box8 {
+    grid-area: 5/3/6/4; }
+  #contentArea .wrapper .box9 {
+    grid-area: 7/3/8/4; }
+  #contentArea .wrapper .box10 {
+    grid-area: 9/3/10/4; }
 
 .category .wrapper {
   display: grid;
@@ -102,12 +138,9 @@ body {
     grid-area: 3/1/4/2; }
 
 .footer {
-  text-align: center;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: 0 auto; }
+  grid-row-start: 12;
+  grid-row-end: 13;
+  text-align: center; }
   .footer span {
     font-size: .5rem;
     color: #9B9B9B; }
