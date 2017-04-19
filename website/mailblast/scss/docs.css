@@ -1,0 +1,124 @@
+@import url(webFont.css);
+html {
+  font-size: 20px;
+  width: 100%;
+  height: 100%; }
+
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.5; }
+
+.divider-line {
+  width: 200px;
+  border-bottom: 2px solid #32A7B8;
+  margin: 2.5rem auto; }
+
+.navbar {
+  background-color: #32A7B8;
+  margin-bottom: 0; }
+  .navbar .navbar-collapse a {
+    color: #FFF; }
+
+.docSearch {
+  background-color: #F5F5F5;
+  text-align: center;
+  border-bottom: 1px solid #DFDFDF;
+  padding: 1.5rem 0;
+  margin-bottom: 1.8rem; }
+  .docSearch h1 {
+    font-family: Montserrat, sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.125;
+    margin-top: .65rem; }
+  .docSearch form {
+    width: 620px;
+    padding: 1.2rem 0;
+    margin: 0 auto; }
+    .docSearch form input, .docSearch form button {
+      height: 50px;
+      font-size: .9rem; }
+    .docSearch form button {
+      background-color: #4F92CA; }
+    .docSearch form button:hover {
+      background-color: #4689C2;
+      -webkit-transition: all .5s ease 0s;
+      -moz-transition: all .5s ease 0s;
+      -ms-transition: all .5s ease 0s;
+      -o-transition: all .5s ease 0s;
+      transition: all .5s ease 0s; }
+
+#contentArea h2 {
+  text-align: center; }
+#contentArea .popArticles {
+  text-align: left;
+  list-style: none;
+  width: 50%;
+  float: left; }
+  #contentArea .popArticles li {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: .9rem;
+    margin-bottom: .8rem; }
+  #contentArea .popArticles a span {
+    color: #32A7B8; }
+
+.category .wrapper {
+  display: grid;
+  grid-template-columns: 1fr 20px 1fr 20px 1fr;
+  grid-template-rows: 100px 20px 100px; }
+  .category .wrapper .box {
+    border: 1px solid #E0E0E0;
+    text-align: center;
+    cursor: pointer; }
+    .category .wrapper .box p {
+      color: #333;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.3;
+      margin: 9px 0; }
+    .category .wrapper .box a {
+      color: #32A7B8;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: .7rem;
+      margin: 15px 0 9px; }
+  .category .wrapper .box:hover {
+    background-color: #F8F8F8;
+    -webkit-transition: all .5s ease 0s;
+    -moz-transition: all .5s ease 0s;
+    -ms-transition: all .5s ease 0s;
+    -o-transition: all .5s ease 0s;
+    transition: all .5s ease 0s; }
+  .category .wrapper .get-start {
+    grid-area: 1/1/2/2; }
+  .category .wrapper .pricing {
+    grid-area: 1/3/2/4; }
+  .category .wrapper .trackingAndAnalytics {
+    grid-area: 1/5/2/6; }
+  .category .wrapper .usingMailblast {
+    grid-area: 3/1/4/2; }
+
+.footer {
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto; }
+  .footer span {
+    font-size: .5rem;
+    color: #9B9B9B; }
+    .footer span a {
+      color: #9B9B9B; }
+    .footer span a:hover {
+      color: #222;
+      -webkit-transition: all .5s ease 0s;
+      -moz-transition: all .5s ease 0s;
+      -ms-transition: all .5s ease 0s;
+      -o-transition: all .5s ease 0s;
+      transition: all .5s ease 0s; }
+
+/*# sourceMappingURL=docs.css.map */

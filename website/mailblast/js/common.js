@@ -14,7 +14,7 @@ $(function() {
   //
   $(document).on('click', '.envelope', function() {
     //如果是users文件夹下的页面，那么跳转到主页时路径得多上跳一层
-    if (window.location.pathname.indexOf('users')) {
+    if (window.location.pathname.indexOf('users') !== -1) {
       location.href = '../index.html';
     }
     //同级页面跳转即可直接写要跳转的页面名
