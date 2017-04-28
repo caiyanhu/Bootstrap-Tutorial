@@ -1,0 +1,28 @@
+.modal {
+  .modal-header {
+	h4 {
+	  color: #5B5B65;
+	  font-size: 13px;
+	  font-weight: 500;
+	  text-shadow: 0 1px 0 #FFF;
+	  padding-bottom: 6px;
+	  text-align: center;
+	}
+  }
+  .modal-body {
+	.input-group {
+	  span {
+		background-color: transparent;
+		border-right: none;
+	  }
+	  input {
+		border-left: none;
+	  }
+	}
+	button {
+	  background-color: #3EA8E5;
+	  color: #FFF;
+	  border-radius: 4px;
+	}
+  }
+}

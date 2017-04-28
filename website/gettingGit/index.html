@@ -7,11 +7,13 @@
 		<title>Getting Git - a video series from git init to Git Master</title>
 		<!-- Bootstrap -->
 		<link rel="stylesheet" href="../../css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
 		<link rel="stylesheet" href="css/home.css">
 		<link rel="stylesheet" href="css/watch.css">
 		<link rel="stylesheet" href="css/overview.css">
 		<link rel="stylesheet" href="css/about.css">
 		<link rel="stylesheet" href="css/more.css">
+		<link rel="stylesheet" href="css/modal.css">
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
@@ -33,7 +35,7 @@
 					<p>A comprehensive video series from <code>git init</code> to <em>Git Master</em>.</p>
 				</div>
 				<div class="home__wrapper__button">
-					<button>
+					<button data-toggle="modal" data-target="#myModal">
 						<span>Purchase for $29</span>
 					</button>
 				</div>
@@ -103,7 +105,7 @@
 			<div class="about__dividerLine dividerLine"></div>
 			<p class="about__prompt">Get full access for just $29!</p>
 			<div class="about__button">
-				<button>
+				<button data-toggle="modal" data-target="#myModal">
 					<span>Purchase for $29</span>
 				</button>
 			</div>
@@ -117,5 +119,44 @@
 			<p class="more__prompt">No problem. Just <a href="mailto:jmac@gettinggit%2Ecom">email me</a>. Unless I'm sleeping, you'll receive a pretty snappy reply
 				.</p>
 		</section>
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<h4 class="modal-title" id="myModalLabel">Getting Git</h4>
+					</div>
+					<div class="modal-body">
+						<form role="form">
+							<div class="input-group">
+								<span class="input-group-addon">
+									<i class="fa fa-envelope-o"></i>
+								</span>
+								<input type="email" class="form-control" placeholder="电子邮箱">
+							</div>
+							<div class="input-group">
+								<span class="input-group-addon">
+									<i class="fa fa-credit-card"></i>
+								</span>
+								<input type="number" class="form-control" placeholder="卡号" inputmode="numeric">
+							</div>
+							<div class="input-group">
+								<span class="input-group-addon">
+									<i class="fa fa-calendar"></i>
+								</span>
+								<input type="text" class="form-control" placeholder="月/年">
+								<span class="input-group-addon">
+									<i class="fa fa-lock"></i>
+								</span>
+								<input type="number" class="form-control" placeholder="CVC">
+							</div>
+						</form>
+						<button type="button" class="btn btn-primary btn-block">支付US$29.00</button>
+					</div>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>

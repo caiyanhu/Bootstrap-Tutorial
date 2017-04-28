@@ -1,0 +1,58 @@
+@import "common";
+
+article {
+  @media screen and (min-width: 992px) {
+	.container {
+	  width: 750px;
+	}
+  }
+  h2 {
+	font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+	font-size: 1.8rem;
+	font-weight: 500;
+	line-height: 1.1;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	text-align: center;
+  }
+  .dividerLine {
+	color: $dominantHue;
+  }
+  .flexContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	p {
+	  font-size: .8rem;
+	  line-height: 1.5;
+	  font-weight: 300;
+	  margin-bottom: 20px;
+	  text-align: center;
+	  a {
+		color: $dominantHue;
+		text-decoration: none;
+	  }
+	  a:hover {
+		color: #B32F2F;
+		text-decoration: underline;
+		@include transition;
+	  }
+	}
+	ul.outer {
+	  margin-top: 0;
+	  margin-bottom: 10px;
+	  & > li {
+		list-style-type: disc;
+	  }
+	  li {
+		font-size: .7rem;
+	  }
+	  li.red > a {
+		color: $dominantHue;
+		@include transition;
+	  }
+	}
+  }
+
+}
