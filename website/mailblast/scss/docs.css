@@ -17,10 +17,18 @@ body {
   margin: 2.5rem auto; }
 
 body {
-  min-height: 100%;
-  display: grid;
-  grid-template-rows: 1fr auto; }
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; }
 
+.contentWrapper {
+  flex: 1; }
+
+@media screen and (max-width: 720px) {
+  #contentArea .wrapper {
+    flex-direction: column;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column; } }
 .navbar {
   background-color: #32A7B8;
   margin-bottom: 0; }
@@ -68,10 +76,13 @@ body {
 #contentArea h2 {
   text-align: center; }
 #contentArea .wrapper {
-  display: grid;
-  grid-template-columns: 1fr 40px 1fr;
-  grid-template-rows: repeat(5, auto 0.8rem); }
+  display: flex;
+  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  justify-content: space-around; }
   #contentArea .wrapper .box {
+    flex: 1 50%;
     font-size: .8rem;
     line-height: 1.125;
     margin-bottom: .8rem; }
@@ -80,35 +91,21 @@ body {
       margin-right: 6px; }
     #contentArea .wrapper .box span {
       color: #32A7B8; }
-  #contentArea .wrapper .box1 {
-    grid-area: 1/1/2/2; }
-  #contentArea .wrapper .box2 {
-    grid-area: 3/1/4/2; }
-  #contentArea .wrapper .box3 {
-    grid-area: 5/1/6/2; }
-  #contentArea .wrapper .box4 {
-    grid-area: 7/1/8/2; }
-  #contentArea .wrapper .box5 {
-    grid-area: 9/1/10/2; }
-  #contentArea .wrapper .box6 {
-    grid-area: 1/3/2/4; }
-  #contentArea .wrapper .box7 {
-    grid-area: 3/3/4/4; }
-  #contentArea .wrapper .box8 {
-    grid-area: 5/3/6/4; }
-  #contentArea .wrapper .box9 {
-    grid-area: 7/3/8/4; }
-  #contentArea .wrapper .box10 {
-    grid-area: 9/3/10/4; }
 
 .category .wrapper {
-  display: grid;
-  grid-template-columns: 1fr 20px 1fr 20px 1fr;
-  grid-template-rows: 100px 20px 100px; }
+  display: flex;
+  justify-content: flex-start;
+  -webkit-justify-content: flex-start;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap; }
   .category .wrapper .box {
     border: 1px solid #E0E0E0;
     text-align: center;
-    cursor: pointer; }
+    cursor: pointer;
+    width: 30%;
+    margin-bottom: .5rem;
+    margin-right: 2%; }
     .category .wrapper .box p {
       color: #333;
       font-family: 'Source Sans Pro', sans-serif;
@@ -128,18 +125,8 @@ body {
     -ms-transition: all .5s ease 0s;
     -o-transition: all .5s ease 0s;
     transition: all .5s ease 0s; }
-  .category .wrapper .get-start {
-    grid-area: 1/1/2/2; }
-  .category .wrapper .pricing {
-    grid-area: 1/3/2/4; }
-  .category .wrapper .trackingAndAnalytics {
-    grid-area: 1/5/2/6; }
-  .category .wrapper .usingMailblast {
-    grid-area: 3/1/4/2; }
 
 .footer {
-  grid-row-start: 12;
-  grid-row-end: 13;
   text-align: center; }
   .footer span {
     font-size: .5rem;
