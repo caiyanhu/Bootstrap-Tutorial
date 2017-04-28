@@ -1,0 +1,90 @@
+@import "common";
+
+.home {
+  height: 100%;
+  background-color: $dominantHue;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  -webkit-justify-content: flex-start;
+  &__wrapper {
+	height: auto;
+	margin: auto;
+	&__logo {
+	  width: 600px;
+	}
+	&__dividerLine {
+	  border: 2px solid #FFF;
+	  max-width: 50px;
+	  margin: 30px auto;
+	}
+	&__briefIntro {
+	  color: rgba(255, 255, 255, .7);
+	  font-size: .9rem;
+	  font-weight: 300;
+	  line-height: 1.5;
+	  text-align: center;
+	  margin: 0 auto 50px;
+	  code {
+		color: #FFF;
+		background-color: transparent;
+		font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+		font-size: 90%;
+		word-spacing: -4px;
+		border-radius: 4px;
+		padding: 0;
+	  }
+	  em {
+		color: #FFF;
+	  }
+	}
+	&__button {
+	  display: flex;
+		  justify-content: center;
+		  button {
+			background-color: transparent;
+			border: 1px solid #FFF;
+			border-radius: 300px;
+			padding: 15px 30px;
+			span {
+			  color: #FFF;
+			  font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+		  font-size: .7rem;
+		  font-weight: 700;
+		  text-transform: uppercase;
+		  line-height: 1.428;
+		}
+	  }
+	  button:hover {
+		background-color: #FFF;
+		span {
+		  color: $dominantHue;
+		}
+		@include transition;
+	  }
+	}
+	&__hint {
+	  color: rgba(255, 255, 255, .7);
+	  font-size: 12px;
+	  font-weight: 300;
+	  line-height: 1.5;
+	  text-align: center;
+	  margin: 15px auto 50px;
+	  p {
+		margin: 0;
+	  }
+	  b {
+		color: #FFF;
+		font-weight: 700;
+	  }
+	  a {
+		color: #FFF;
+		text-decoration: underline;
+	  }
+	  a:hover {
+		color: rgba(255, 255, 255, .7);
+		@include transition;
+	  }
+	}
+  }
+}
