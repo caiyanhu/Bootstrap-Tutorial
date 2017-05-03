@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<title>Learn Git - Configuring Git</title>
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="../../../css/bootstrap.min.css">
+		<link rel="stylesheet" href="../css/commonHeader.css">
+		<link rel="stylesheet" href="../css/learnContent.css">
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="../../../js/jquery-3.1.1.js"></script>
+		<script src="../../../js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<header class="commonHeader">
+			<div class="wrapper">
+				<a href="../index.html">
+					<img src="../images/getting-git.svg" alt="logo" width="300">
+				</a>
+				<div class="dividerLine"></div>
+				<p>A comprehensive video series from <code>git init</code> to <em>Git Master</em>.</p>
+			</div>
+		</header>
+		<section>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<h2>Configuring Git</h2>
+						<div class="dividerLine"></div>
+						<p>In this video we'll configure Git. Now that you've Git installed, you'll want to customize its configuration.</p>
+						<video src="https://player.vimeo.com/video/196610170" controls poster="../images/git%20config.webp"></video>
+						<p>First, we'll want to tell Git who you are. Git uses this for the author information when tracking changes.</p>
+						<p>While you can configure this per Git repository, it's most common to set it globally.</p>
+						<p>Let's set the user name by running:</p>
+						<pre>git config --global user.name "JMac"</pre>
+						<p>The configuration value is in quotes. In my case, I've set it to my name.</p>
+						<p>Next, we'll set the user email by running:</p>
+						<pre>git config --global user.email "jmac@example.com"</pre>
+						<p>And set the value to your email.</p>
+						<p>Some git commands open a text editor, so let's also configure the core editor. By default it's the same one used by your shell, which is normally
+							something like <code>vi</code>.</p>
+						<p>Now, while I might be comfortable using <code>vi</code>, I definitely understand it's not for everyone.</p>
+						<p>So feel free to change your core editor by running:</p>
+						<pre>git config --global core.editor ""</pre>
+						<p>The value should be the command to open the editor. For example, to open <a href="https://atom.io/">Atom</a> set it to <code>"atom --wait"</code>.
+						</p>
+						<p>If you use Sublime, you can set it to <code>"subl -n -w"</code>.</p>
+						<p>Or, if you use another text editor, a quick Google search for the name of your editor and git core.editor should find the appropriate
+							configuration value.</p>
+						<p>This is enough configuration for now. But before moving on to the next video, let's verify all of our changes are in place by running:</p>
+						<pre>git config --list</pre>
+						<div class="dividerLine"></div>
+						<p><strong>Tired of reading?</strong>Purchase <a href="../index.html" title="Purchase Getting Git">>Getting Git</a> for full access to over 60
+							videos demoing everything here from the command line.</p>
+						<p class="TOC"><a href="getting-git-introduction.html" title="Return to Learn Git - Table of Contents">Learn Git - Table of Contents</a></p>
+					</div>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>
